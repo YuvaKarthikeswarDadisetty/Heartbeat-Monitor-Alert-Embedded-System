@@ -1,0 +1,14 @@
+Wokwi Validation Output
+Educational Prototype
+
+--- NORMAL ---
+Simulated Beat | BPM: 75.00
+STATUS: NORMAL
+
+--- LOW ---
+Simulated Beat | BPM: 40.00
+STATUS: LOW
+
+--- HIGH ---
+Simulated Beat | BPM: 120.00
+STATUS: HIGH

@@ -1,0 +1,23 @@
+# Arduino build artifacts
+*.hex
+*.elf
+*.eep
+*.bin
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Python
+__pycache__/
+*.pyc

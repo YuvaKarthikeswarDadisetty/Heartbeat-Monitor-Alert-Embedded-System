@@ -1,0 +1,4 @@
+source,target_bpm,status,expected_green_led,expected_red_led,expected_buzzer
+Wokwi,40,LOW,OFF,ON,ON
+Wokwi,75,NORMAL,ON,OFF,OFF
+Wokwi,120,HIGH,OFF,ON,ON

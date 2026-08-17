@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "author": "Yuva Karthikeswar",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 40,
+      "left": -20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 220,
+      "left": 260,
+      "attrs": {
+        "pins": "i2c",
+        "i2cAddress": "0x27"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledGreen",
+      "top": 70,
+      "left": 380,
+      "attrs": {
+        "color": "green",
+        "label": "NORMAL"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rGreen",
+      "top": 110,
+      "left": 340,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledRed",
+      "top": 70,
+      "left": 520,
+      "attrs": {
+        "color": "red",
+        "label": "ALERT"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rRed",
+      "top": 110,
+      "left": 480,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer1",
+      "top": 75,
+      "left": 650,
+      "attrs": {
+        "volume": "0.8",
+        "mode": "smooth"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "uno:7",
+      "rGreen:1",
+      "green",
+      []
+    ],
+    [
+      "rGreen:2",
+      "ledGreen:A",
+      "green",
+      []
+    ],
+    [
+      "ledGreen:K",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:8",
+      "rRed:1",
+      "red",
+      []
+    ],
+    [
+      "rRed:2",
+      "ledRed:A",
+      "red",
+      []
+    ],
+    [
+      "ledRed:K",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:9",
+      "buzzer1:2",
+      "purple",
+      []
+    ],
+    [
+      "buzzer1:1",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:A4",
+      "lcd1:SDA",
+      "green",
+      []
+    ],
+    [
+      "uno:A5",
+      "lcd1:SCL",
+      "blue",
+      []
+    ],
+    [
+      "uno:5V",
+      "lcd1:VCC",
+      "red",
+      []
+    ],
+    [
+      "uno:GND.2",
+      "lcd1:GND",
+      "black",
+      []
+    ]
+  ],
+  "serialMonitor": {
+    "display": "always",
+    "newline": "lf"
+  }
+}
