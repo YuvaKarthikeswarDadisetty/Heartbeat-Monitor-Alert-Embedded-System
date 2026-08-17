@@ -1,0 +1,8 @@
+HEARTBEAT MONITOR
+Educational Prototype
+
+Raw Signal: 472 | BPM: 75.00 | Status: NORMAL
+Beat detected | Interval: 800 ms | Instant BPM: 75.00 | Average BPM: 75.00
+Raw Signal: 485 | BPM: 40.00 | Status: LOW
+Beat detected | Interval: 500 ms | Instant BPM: 120.00 | Average BPM: 120.00
+Raw Signal: 620 | BPM: 120.00 | Status: HIGH
